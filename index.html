@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Template de site single page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Template de site single page responsive avec hero, sections centrées et menu mobile hamburger.">
+    <link rel="preload" href="public/assets/css/app.min.css" as="style">
+    <link rel="stylesheet" href="public/assets/css/app.min.css">
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="public/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/images/favicons/favicon-16x16.png">
+
+    <!-- Apple -->
+    <link rel="apple-touch-icon" sizes="180x180" href="public/images/favicons/apple-touch-icon.png">
+
+    <!-- Android -->
+    <link rel="icon" type="image/png" sizes="192x192" href="public/images/favicons/android-chrome-192x192.png">
+
+    <!-- Manifeste PWA -->
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Couleur navigateur mobile -->
+    <meta name="theme-color" content="#2f2f2f">
+</head>
+<body>
+<header class="site-header">
+    <div class="site-header__inner">
+        <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="main-nav"
+            aria-label="Ouvrir le menu">
+            <span class="nav-toggle__line"></span>
+            <span class="nav-toggle__line"></span>
+            <span class="nav-toggle__line"></span>
+        </button>
+
+        <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+            <a href="#section1">Accueil</a>
+            <a href="#section2">Section 2</a>
+            <a href="#section3">Section 3</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <section id="section1" class="hero-training">
+        <picture class="hero-training__media" aria-hidden="true">
+            <source
+                type="image/webp"
+                srcset="
+                    public/images/training-bg-640.webp 640w,
+                    public/images/training-bg-1024.webp 1024w,
+                    public/images/training-bg-1600.webp 1600w,
+                    public/images/training-bg-2048.webp 2048w
+                "
+                sizes="100vw">
+
+            <img
+                src="public/images/training-bg-1600.jpg"
+                srcset="
+                    public/images/training-bg-640.jpg 640w,
+                    public/images/training-bg-1024.jpg 1024w,
+                    public/images/training-bg-1600.jpg 1600w,
+                    public/images/training-bg-2048.jpg 2048w
+                "
+                sizes="100vw"
+                alt="">
+        </picture>
+
+        <div class="hero-training__overlay"></div>
+
+        <div class="hero-training__content section-content">
+            <h1>Template de site single page</h1>
+            <p>
+                Aliquam lacinia tellus sapien, sed maximus mi sodales non. Donec nec felis erat.
+                Vestibulum et consectetur lacus. Nulla facilisi. Phasellus risus dolor, faucibus a
+                facilisis vitae, pellentesque ut urna.
+            </p>
+
+            <a href="#section2" class="btn-cta">Call to action</a>
+        </div>
+    </section>
+
+    <section id="section2" class="section section--light">
+        <div class="section-content">
+            <h2>Section 2</h2>
+            <p>
+                Aliquam lacinia tellus sapien, sed maximus mi sodales non. Donec nec felis erat.
+                Vestibulum et consectetur lacus. Nulla facilisi. Phasellus risus dolor, faucibus a
+                facilisis vitae, pellentesque ut urna.
+            </p>
+        </div>
+    </section>
+
+    <section id="section3" class="section section--light-alt">
+        <div class="section-content">
+            <h2>Section 3</h2>
+            <p>
+                Aliquam lacinia tellus sapien, sed maximus mi sodales non. Donec nec felis erat.
+                Vestibulum et consectetur lacus. Nulla facilisi. Phasellus risus dolor, faucibus a
+                facilisis vitae, pellentesque ut urna.
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>À propos</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Navigation</h3>
+            <nav class="footer-nav" aria-label="Navigation pied de page">
+                <a href="#section1">Accueil</a>
+                <a href="#section2">Section 2</a>
+                <a href="#section3">Section 3</a>
+            </nav>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contact</h3>
+            <p>Email : <a href="mailto:contact@email.com">contact@email.com</a></p>
+            <p>Téléphone : <a href="tel:+33123456789">01 23 45 67 89</a></p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 - Tous droits réservés</p>
+    </div>
+</footer>
+
+<script src="public/assets/js/app.min.js" defer></script>
+</body>
+</html>
