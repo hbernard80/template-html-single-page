@@ -1,4 +1,4 @@
-# Template HTML/CSS poour un site _single page_
+# Template HTML/CSS pour un site _single page_
 
 > 📆 04/2026
 
