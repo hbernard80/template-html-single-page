@@ -10,3 +10,7 @@ Quelques détails resteront à améliorer en fonction de l'utilisation finale :
 * Affichage sur mobile : menu, images. 
 * SEO.
 * Accessibilité.
+
+![screenshot-01.png](screenshot-01.png)
+
+![screenshot-02.png](screenshot-02.png)
